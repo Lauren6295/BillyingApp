@@ -11,25 +11,38 @@
 <body>
     <form action="" id="form">
     <h1>Agregar Facturas</h1>	
-    <label for="nombre">Digite su nombre:</label>
-    <input type="text" id="nombre" placeholder="Name" required minlength="3" maxlength="15"/><br>
 
-    <label for="cantidad">Digite la cantidad:</label>
-    <input type="number" id="cantidad" required placeholder="Amount" min="0"/><br>
 
-    <label>Digite la fecha: </label>
-    <input type="date" id="fecha" min="2018-01-01" max="2020-12-30"><br>
+    <div class="clearfix">
+        <div class="titles" > 
+            <ul>
+                <li><label for="nombre">Digite su nombre:</label></li>
+                <li><label for="cantidad">Digite la cantidad:</label></li>
+                <li><label>Digite la fecha: </label></li>
+                <li><label> Seleccione el tipo de factura</label></li>
+            </ul>
+        </div>
 
-    <label> Seleccione el tipo de factura</label>
-        <select  id="tipo" class="input-color">
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option selected></option>
-        </select>				
-    <br>
-    <input type="button" value="Agregar" id="boton">
-    <input type="button" value="Borrar" id="borrar">
+        <div class="inputs">
+            <ul>
+                <li><input type="text" id="nombre" placeholder="Name" required minlength="3" maxlength="15"/></li>
+                <li><input type="number" id="cantidad" required placeholder="Amount" min="0"/></li>
+                <li><input type="date" id="fecha" min="2018-01-01" max="2020-12-30"></li>
+                <li><select  id="tipo" class="input-color">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option selected></option>
+                    </select>	
+                </li>
+            </ul>
+        </div>
+
+        <div class="buttons" >
+            <input type="button" value="Agregar" id="boton">
+            <input type="button" value="Borrar" id="borrar">
+        </div>
+    </div>
 </form>
 
     <div class="contenedor">

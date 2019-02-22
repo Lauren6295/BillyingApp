@@ -18,3 +18,23 @@ body {
     float: left;
     margin: 20px;
 }
+
+#nombre, #cantidad, #fecha, #tipo {
+    width: 200px;
+    height: 25px;
+    background-color: rgb(151, 255, 255);
+}
+
+.titles ul li, .inputs ul li {
+    list-style: none;
+}
+
+.titles, .inputs {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
